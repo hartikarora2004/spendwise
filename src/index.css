@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/* 1. Tell Tailwind v4 to trigger dark mode when a .dark class is present */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 2. Your custom variable overrides */
+:root {
+  --color-bg-primary: #f9fafb;
+  --color-card-bg: #ffffff;
+  --color-text-main: #1f2937;
+}
+
+.dark {
+  --color-bg-primary: #111827;
+  --color-card-bg: #1f2937;
+  --color-text-main: #f9fafb;
+}
