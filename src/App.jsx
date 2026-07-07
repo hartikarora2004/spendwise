@@ -107,15 +107,15 @@ function App() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
             <p className="text-xs font-bold text-gray-400 uppercase">Net Balance</p>
-            <p className={`text-xl font-black ${globalBalance >= 0 ? 'text-gray-900 dark:text-white' : 'text-red-500'}`}>${globalBalance.toFixed(2)}</p>
+            <p className={`text-xl font-black ${globalBalance >= 0 ? 'text-gray-900 dark:text-white' : 'text-red-500'}`}>₹{globalBalance.toFixed(2)}</p>
           </div>
           <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
             <p className="text-xs font-bold text-gray-400 uppercase text-green-600">Total Inflow</p>
-            <p className="text-xl font-black text-green-600">${globalIncome.toFixed(2)}</p>
+            <p className="text-xl font-black text-green-600">₹{globalIncome.toFixed(2)}</p>
           </div>
           <div className="bg-white dark:bg-gray-800 p-4 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
             <p className="text-xs font-bold text-gray-400 uppercase text-red-500">Total Outflow</p>
-            <p className="text-xl font-black text-red-500">${globalExpense.toFixed(2)}</p>
+            <p className="text-xl font-black text-red-500">₹{globalExpense.toFixed(2)}</p>
           </div>
         </div>
 
