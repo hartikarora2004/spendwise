@@ -21,7 +21,7 @@ export default function Auth() {
       if (error) {
         setMessage({ text: error.message, type: 'error' });
       } else {
-        setMessage({ text: 'Signup successful! Welcome to SpendWise.', type: 'success' });
+        setMessage({ text: 'Please check your mailbox to confirm your email address.', type: 'success' });
       }
     } else {
       const { error } = await supabase.auth.signInWithPassword({ email, password });
